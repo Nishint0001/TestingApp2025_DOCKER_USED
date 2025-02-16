@@ -1,7 +1,7 @@
 package com.example.TestingApp2025.controllers;
 
 import com.example.TestingApp2025.dtos.EmployeeDto;
-import com.example.TestingApp2025.services.EmployeeService;
+import com.example.TestingApp2025.services.EmployeeServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.List;
 @RequestMapping("/employee")
 public class EmployeeController
 {
-    private final EmployeeService employeeService;
+    private final EmployeeServiceImpl employeeService;
 
-    public EmployeeController(EmployeeService employeeService)
+    public EmployeeController(EmployeeServiceImpl employeeService)
     {
         this.employeeService = employeeService;
     }
